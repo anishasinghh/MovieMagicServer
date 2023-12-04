@@ -1,63 +1,34 @@
 import * as dao from "./dao.js";
 
 function MovieRoutes(app) {
-  const createUser = async (req, res) => {
-    const user = await dao.createUser(req.body);
-    res.json(user);
+  const createMovie = async (req, res) => {
+    const movie = await dao.createMovie(req.body);
+    res.json(movie);
   };
-  const deleteUser = async (req, res) => {
-    const status = await dao.deleteUser(req.params.userId);
+  const deleteMovie = async (req, res) => {
+    const status = await dao.deleteMovie(req.params.movieId);
     res.json(status);
 };
-  const findAllUsers = async (req, res) => {
-    const users = await dao.findAllUsers();
-    res.json(users);
+  const findAllMovies = async (req, res) => {
+    const movies = await dao.findAllMovies();
+    res.json(movies);
   };
-  const findUserById = async (req, res) => {
-    const user = await dao.findUserById(req.params.userId);
-    res.json(user);
+  const findMovieById = async (req, res) => {
+    const movie = await dao.findMovieById(req.params.movieId);
+    res.json(movie);
   };
-  const updateUser = async (req, res) => {
-    const { userId } = req.params;
-    const status = await dao.updateUser(userId, req.body);
-    const currentUser = await dao.findUserById(userId);
-    req.session['currentUser'] = currentUser;
+  const updateMovie = async (req, res) => {
+    const { movieId } = req.params;
+    const status = await dao.updateMovie(movieId, req.body);
+    const currentMovie = await dao.findMovieById(movieId);
+    req.session['currentMovie'] = currentMove;
     res.json(status);
   };
-  const signup = async (req, res) => {
-    const user = await dao.findUserByUsername(
-      req.body.username);
-    if (user) {
-      res.status(400).json(
-        { message: "Username already taken" });
-    }
-    const currentUser = await dao.createUser(req.body);
-    req.session['currentUser'] = currentUser;
-    res.json(currentUser);
-  };
-  const signin = async (req, res) => {
-    const { username, password } = req.body;
-    const currentUser = await dao.findUserByCredentials(username, password);
-    req.session['currentUser'] = currentUser;
-    res.json(currentUser);
-   };
-   const signout = (req, res) => {
-    req.session.destroy();
-    res.json(200);
-  };
-  const account = async (req, res) => {
-    res.json(req.session['currentUser']);
-   };
 
-
-  app.post("/api/users", createUser);
-  app.get("/api/users", findAllUsers);
-  app.get("/api/users/:userId", findUserById);
-  app.put("/api/users/:userId", updateUser);
-  app.delete("/api/users/:userId", deleteUser);
-  app.post("/api/users/signup", signup);
-  app.post("/api/users/signin", signin);
-  app.post("/api/users/signout", signout);
-  app.post("/api/users/account", account);
+  app.post("/api/movies", createMovie);
+  app.get("/api/movies", findAllMovies);
+  app.get("/api/movies/:movieId", findMovieById);
+  app.put("/api/movies/:movieId", updateMovie);
+  app.delete("/api/movies/:movieId", deleteMovie);
 }
 export default MovieRoutes;
