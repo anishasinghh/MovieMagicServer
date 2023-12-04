@@ -19,11 +19,11 @@ import "dotenv/config";
 //   json: true
 // };
 
-// request.post(authOptions, function(error, response, body) {
-//   if (!error && response.statusCode === 200) {
-//     var token = body.access_token;
-//   }
-// });
+request.post(authOptions, function(error, response, body) {
+  if (!error && response.statusCode === 200) {
+    var token = body.access_token;
+  }
+});
 
 const app = express();
 app.use(express.json());
