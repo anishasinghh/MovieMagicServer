@@ -4,6 +4,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import UserRoutes from "./users/routes.js";
 import "dotenv/config";
+import MovieRoutes from ".movies/routes.js";
 
 const app = express()
 app.use(express.json());
@@ -33,4 +34,5 @@ const CONNECTION_STRING = process.env.DB_CONNECTION_STRING;
 mongoose.connect(CONNECTION_STRING);
 
 UserRoutes(app);
+MovieRoutes(app);
 app.listen(process.env.PORT || 4000);
