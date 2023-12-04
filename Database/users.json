@@ -1,2 +1,1173 @@
-[{"_id":{"$oid":"65580756fed6bb3b501c55f2"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"ada","password":"ada123","firstName":"Ada","lastName":"Lovelace","email":"ada@lovelace.com","dob":"1815-12-10","role":"ADMIN"},
-{"_id":{"$oid":"654f9ec2ea7ead465908d1e3"},"liked_movies":[1,7,12,20,30],"rewatched_movies":[{"id":4,"watches":10},{"id":30,"watches":7},{"id":12,"watches":9}],"followers":["ada","evenstar"],"following":["lady_of_light","iron_man"],"username":"white_wizard","password":"mithrandir42","firstName":"Gandalf","lastName":"the Grey","email":"gandalf@middleearth.com","dob":"unknown","role":"ADMIN"},{"_id":{"$oid":"654ff56dea7ead465908d1e4"},"liked_movies":[6,32,17,11],"rewatched_movies":[{"id":11,"watches":20},{"id":13,"watches":13},{"id":9,"watches":2}],"followers":["white_wizard","ada"],"following":["lady_of_light","iron_man"],"username":"evenstar","password":"arwen123","firstName":"Arwen","lastName":"Undómiel","email":"arwen@rivendell.com","dob":"241-03-01","role":"ADMIN"},{"_id":{"$oid":"654ff586ea7ead465908d1e5"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["ada","iron_man"],"username":"lady_of_light","password":"lothlorien123","firstName":"Galadriel","lastName":"N/A","email":"galadriel@lothlorien.com","dob":"Years of the Trees","role":"ADMIN"},{"_id":{"$oid":"654ffdd3870c092d5441bc88"},"liked_movies":[17,20,22],"rewatched_movies":[{"id":15,"watches":45},{"id":23,"watches":3},{"id":27,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","ada"],"username":"iron_man","password":"stark123","firstName":"Tony","lastName":"Stark","email":"tony@stark.com","dob":"1970-05-29","role":"USER"},{"_id":{"$oid":"654ffdd3870c092d5441bc89"},"liked_movies":[4,6,15],"rewatched_movies":[{"id":15,"watches":4},{"id":18,"watches":3},{"id":12,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"dark_knight","password":"wayne123","firstName":"Bruce","lastName":"Wayne","email":"bruce@wayne.com","dob":"1972-02-19","role":"USER"},{"_id":{"$oid":"654ffdd3870c092d5441bc8a"},"liked_movies":[1,2,3,4,5],"rewatched_movies":[{"id":5,"watches":4},{"id":4,"watches":3},{"id":1,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"capt_america","password":"rogers123","firstName":"Steve","lastName":"Rogers","email":"steve@avengers.com","dob":"1918-07-04","role":"USER"},{"_id":{"$oid":"654ffdd3870c092d5441bc8b"},"liked_movies":[10,9,8,7],"rewatched_movies":[{"id":9,"watches":4},{"id":18,"watches":3},{"id":26,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"black_widow","password":"romanoff123","firstName":"Natasha","lastName":"Romanoff","email":"natasha@avengers.com","dob":"1984-11-22","role":"USER"},{"_id":{"$oid":"654ffdd3870c092d5441bc8c"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"thor_odinson","password":"mjolnir123","firstName":"Thor","lastName":"Odinson","email":"thor@asgard.com","dob":"982-05-25","role":"USER"},{"_id":{"$oid":"654ffdd3870c092d5441bc8d"},"liked_movies":[5,8,10,14],"rewatched_movies":[{"id":14,"watches":4},{"id":29,"watches":3},{"id":28,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"hulk_smash","password":"banner123","firstName":"Bruce","lastName":"Banner","email":"bruce@avengers.com","dob":"1969-12-18","role":"USER"},{"_id":{"$oid":"654ffdd3870c092d5441bc8e"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"ring_bearer","password":"shire123","firstName":"Frodo","lastName":"Baggins","email":"frodo@shire.com","dob":"1368-09-22","role":"ADMIN"},{"_id":{"$oid":"654ffdd3870c092d5441bc8f"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"strider","password":"aragorn123","firstName":"Aragorn","lastName":"Elessar","email":"aragorn@gondor.com","dob":"2931-03-01","role":"ADMIN"},{"_id":{"$oid":"654ffdd3870c092d5441bc90"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"elf_archer","password":"legolas123","firstName":"Legolas","lastName":"Greenleaf","email":"legolas@mirkwood.com","dob":"2879-07-15","role":"ADMIN"},{"_id":{"$oid":"654fff58ea7ead465908d1e7"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"pandava_archer","password":"kuru123","firstName":"Arjuna","lastName":"Pandava","email":"arjuna@hastinapura.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"654fff6fea7ead465908d1e8"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"mithila_princess","password":"ramayana321","firstName":"Sita","lastName":"Janak","email":"sita@mithila.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"654fff7bea7ead465908d1e9"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"mighty_pandava","password":"gadadhari42","firstName":"Bhima","lastName":"Pandava","email":"bhima@hastinapura.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"654fff89ea7ead465908d1ea"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"panchali_princess","password":"dharma123","firstName":"Draupadi","lastName":"Panchal","email":"draupadi@panchala.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"654fffa9ea7ead465908d1eb"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"flute_charmer","password":"mahabharata108","firstName":"Krishna","lastName":"Yadava","email":"krishna@dwaraka.com","dob":"unknown","role":"ADMIN"},{"_id":{"$oid":"654ffff6ea7ead465908d1ec"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"monkey_king","password":"wukong777","firstName":"Sun","lastName":"Wukong","email":"wukong@mountHuaguo.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"65500001ea7ead465908d1ed"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"moon_goddess","password":"chang'e123","firstName":"Chang","lastName":"E","email":"change@moonpalace.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"6550000bea7ead465908d1ee"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"third_lotus_prince","password":"nezha789","firstName":"Nezha","lastName":"N/A","email":"nezha@chalai.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"65500018ea7ead465908d1ef"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"warrior_saint","password":"guanyu456","firstName":"Guan","lastName":"Yu","email":"guanyu@shu.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"65500022ea7ead465908d1f0"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"great_flood_controller","password":"yuthegreat101","firstName":"Yu","lastName":"the Great","email":"yu@xiaDynasty.com","dob":"unknown","role":"ADMIN"},{"_id":{"$oid":"6550007bea7ead465908d1f1"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"magic_lamp_seeker","password":"aladdin123","firstName":"Aladdin","lastName":"N/A","email":"aladdin@arabianNights.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"65500086ea7ead465908d1f2"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"nightly_storyteller","password":"scheherazade1001","firstName":"Scheherazade","lastName":"N/A","email":"scheherazade@persia.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"65500090ea7ead465908d1f3"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"seven_seas_adventurer","password":"sinbad777","firstName":"Sinbad","lastName":"the Sailor","email":"sinbad@sailorAdventures.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"6550009aea7ead465908d1f4"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"cave_opener","password":"openSesame40","firstName":"Ali","lastName":"Baba","email":"aliBaba@thieves.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"655000a4ea7ead465908d1f5"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"immortal_guide","password":"greenOne786","firstName":"Khidr","lastName":"N/A","email":"khidr@eternalWisdom.com","dob":"unknown","role":"ADMIN"},{"_id":{"$oid":"655000eeea7ead465908d1f6"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"heavenly_warrior","password":"michael777","firstName":"Michael","lastName":"Archangel","email":"michael@heavensrealm.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"655000f7ea7ead465908d1f7"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"divine_messenger","password":"gabriel123","firstName":"Gabriel","lastName":"Archangel","email":"gabriel@heavensmail.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"65500100ea7ead465908d1f8"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"parting_seas","password":"moses10","firstName":"Moses","lastName":"N/A","email":"moses@exodus.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"65500109ea7ead465908d1f9"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"giant_slayer","password":"davidKing42","firstName":"David","lastName":"N/A","email":"david@israelkingdom.com","dob":"unknown","role":"USER"},{"_id":{"$oid":"65500111ea7ead465908d1fa"},"liked_movies":[1,8],"rewatched_movies":[{"id":1,"watches":4},{"id":8,"watches":3},{"id":2,"watches":2}],"followers":["white_wizard","evenstar"],"following":["lady_of_light","iron_man"],"username":"heavenly_gatekeeper","password":"peterRock12","firstName":"Peter","lastName":"Saint","email":"peter@pearlygates.com","dob":"unknown","role":"ADMIN"}]
+[{
+    "_id": {
+        "$oid": "65580756fed6bb3b501c55f2"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "ada",
+    "password": "ada123",
+    "firstName": "Ada",
+    "lastName": "Lovelace",
+    "email": "ada@lovelace.com",
+    "dob": "1815-12-10",
+    "role": "ADMIN"
+},
+{
+    "_id": {
+        "$oid": "654f9ec2ea7ead465908d1e3"
+    },
+    "liked_movies": [
+        1,
+        7,
+        12,
+        20,
+        30
+    ],
+    "rewatched_movies": [{
+        "id": 4,
+        "watches": 10
+    },
+    {
+        "id": 30,
+        "watches": 7
+    },
+    {
+        "id": 12,
+        "watches": 9
+    }],
+    "followers": [
+        "ada",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "white_wizard",
+    "password": "mithrandir42",
+    "firstName": "Gandalf",
+    "lastName": "the Grey",
+    "email": "gandalf@middleearth.com",
+    "dob": "unknown",
+    "role": "ADMIN"
+},
+{
+    "_id": {
+        "$oid": "654ff56dea7ead465908d1e4"
+    },
+    "liked_movies": [
+        6,
+        32,
+        17,
+        11
+    ],
+    "rewatched_movies": [{
+        "id": 11,
+        "watches": 20
+    },
+    {
+        "id": 13,
+        "watches": 13
+    },
+    {
+        "id": 9,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "ada"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "evenstar",
+    "password": "arwen123",
+    "firstName": "Arwen",
+    "lastName": "Undómiel",
+    "email": "arwen@rivendell.com",
+    "dob": "241-03-01",
+    "role": "ADMIN"
+}, {
+    "_id": {
+        "$oid": "654ff586ea7ead465908d1e5"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "ada",
+        "iron_man"
+    ],
+    "username": "lady_of_light",
+    "password": "lothlorien123",
+    "firstName": "Galadriel",
+    "lastName": "N/A",
+    "email": "galadriel@lothlorien.com",
+    "dob": "Years of the Trees",
+    "role": "ADMIN"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc88"
+    },
+    "liked_movies": [
+        17,
+        20,
+        22
+    ],
+    "rewatched_movies": [{
+        "id": 15,
+        "watches": 45
+    },
+    {
+        "id": 23,
+        "watches": 3
+    },
+    {
+        "id": 27,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "ada"
+    ],
+    "username": "iron_man",
+    "password": "stark123",
+    "firstName": "Tony",
+    "lastName": "Stark",
+    "email": "tony@stark.com",
+    "dob": "1970-05-29",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc89"
+    },
+    "liked_movies": [
+        4,
+        6,
+        15
+    ],
+    "rewatched_movies": [{
+        "id": 15,
+        "watches": 4
+    },
+    {
+        "id": 18,
+        "watches": 3
+    },
+    {
+        "id": 12,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "dark_knight",
+    "password": "wayne123",
+    "firstName": "Bruce",
+    "lastName": "Wayne",
+    "email": "bruce@wayne.com",
+    "dob": "1972-02-19",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc8a"
+    },
+    "liked_movies": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "rewatched_movies": [{
+        "id": 5,
+        "watches": 4
+    },
+    {
+        "id": 4,
+        "watches": 3
+    },
+    {
+        "id": 1,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "capt_america",
+    "password": "rogers123",
+    "firstName": "Steve",
+    "lastName": "Rogers",
+    "email": "steve@avengers.com",
+    "dob": "1918-07-04",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc8b"
+    },
+    "liked_movies": [
+        10,
+        9,
+        8,
+        7
+    ],
+    "rewatched_movies": [{
+        "id": 9,
+        "watches": 4
+    },
+    {
+        "id": 18,
+        "watches": 3
+    },
+    {
+        "id": 26,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "black_widow",
+    "password": "romanoff123",
+    "firstName": "Natasha",
+    "lastName": "Romanoff",
+    "email": "natasha@avengers.com",
+    "dob": "1984-11-22",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc8c"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "thor_odinson",
+    "password": "mjolnir123",
+    "firstName": "Thor",
+    "lastName": "Odinson",
+    "email": "thor@asgard.com",
+    "dob": "982-05-25",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc8d"
+    },
+    "liked_movies": [
+        5,
+        8,
+        10,
+        14
+    ],
+    "rewatched_movies": [{
+        "id": 14,
+        "watches": 4
+    },
+    {
+        "id": 29,
+        "watches": 3
+    },
+    {
+        "id": 28,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "hulk_smash",
+    "password": "banner123",
+    "firstName": "Bruce",
+    "lastName": "Banner",
+    "email": "bruce@avengers.com",
+    "dob": "1969-12-18",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc8e"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "ring_bearer",
+    "password": "shire123",
+    "firstName": "Frodo",
+    "lastName": "Baggins",
+    "email": "frodo@shire.com",
+    "dob": "1368-09-22",
+    "role": "ADMIN"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc8f"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "strider",
+    "password": "aragorn123",
+    "firstName": "Aragorn",
+    "lastName": "Elessar",
+    "email": "aragorn@gondor.com",
+    "dob": "2931-03-01",
+    "role": "ADMIN"
+}, {
+    "_id": {
+        "$oid": "654ffdd3870c092d5441bc90"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "elf_archer",
+    "password": "legolas123",
+    "firstName": "Legolas",
+    "lastName": "Greenleaf",
+    "email": "legolas@mirkwood.com",
+    "dob": "2879-07-15",
+    "role": "ADMIN"
+}, {
+    "_id": {
+        "$oid": "654fff58ea7ead465908d1e7"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "pandava_archer",
+    "password": "kuru123",
+    "firstName": "Arjuna",
+    "lastName": "Pandava",
+    "email": "arjuna@hastinapura.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654fff6fea7ead465908d1e8"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "mithila_princess",
+    "password": "ramayana321",
+    "firstName": "Sita",
+    "lastName": "Janak",
+    "email": "sita@mithila.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654fff7bea7ead465908d1e9"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "mighty_pandava",
+    "password": "gadadhari42",
+    "firstName": "Bhima",
+    "lastName": "Pandava",
+    "email": "bhima@hastinapura.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654fff89ea7ead465908d1ea"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "panchali_princess",
+    "password": "dharma123",
+    "firstName": "Draupadi",
+    "lastName": "Panchal",
+    "email": "draupadi@panchala.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "654fffa9ea7ead465908d1eb"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "flute_charmer",
+    "password": "mahabharata108",
+    "firstName": "Krishna",
+    "lastName": "Yadava",
+    "email": "krishna@dwaraka.com",
+    "dob": "unknown",
+    "role": "ADMIN"
+}, {
+    "_id": {
+        "$oid": "654ffff6ea7ead465908d1ec"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "monkey_king",
+    "password": "wukong777",
+    "firstName": "Sun",
+    "lastName": "Wukong",
+    "email": "wukong@mountHuaguo.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "65500001ea7ead465908d1ed"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "moon_goddess",
+    "password": "chang'e123",
+    "firstName": "Chang",
+    "lastName": "E",
+    "email": "change@moonpalace.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "6550000bea7ead465908d1ee"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "third_lotus_prince",
+    "password": "nezha789",
+    "firstName": "Nezha",
+    "lastName": "N/A",
+    "email": "nezha@chalai.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "65500018ea7ead465908d1ef"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "warrior_saint",
+    "password": "guanyu456",
+    "firstName": "Guan",
+    "lastName": "Yu",
+    "email": "guanyu@shu.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "65500022ea7ead465908d1f0"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "great_flood_controller",
+    "password": "yuthegreat101",
+    "firstName": "Yu",
+    "lastName": "the Great",
+    "email": "yu@xiaDynasty.com",
+    "dob": "unknown",
+    "role": "ADMIN"
+}, {
+    "_id": {
+        "$oid": "6550007bea7ead465908d1f1"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "magic_lamp_seeker",
+    "password": "aladdin123",
+    "firstName": "Aladdin",
+    "lastName": "N/A",
+    "email": "aladdin@arabianNights.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "65500086ea7ead465908d1f2"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "nightly_storyteller",
+    "password": "scheherazade1001",
+    "firstName": "Scheherazade",
+    "lastName": "N/A",
+    "email": "scheherazade@persia.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "65500090ea7ead465908d1f3"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "seven_seas_adventurer",
+    "password": "sinbad777",
+    "firstName": "Sinbad",
+    "lastName": "the Sailor",
+    "email": "sinbad@sailorAdventures.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "6550009aea7ead465908d1f4"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "cave_opener",
+    "password": "openSesame40",
+    "firstName": "Ali",
+    "lastName": "Baba",
+    "email": "aliBaba@thieves.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "655000a4ea7ead465908d1f5"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "immortal_guide",
+    "password": "greenOne786",
+    "firstName": "Khidr",
+    "lastName": "N/A",
+    "email": "khidr@eternalWisdom.com",
+    "dob": "unknown",
+    "role": "ADMIN"
+}, {
+    "_id": {
+        "$oid": "655000eeea7ead465908d1f6"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "heavenly_warrior",
+    "password": "michael777",
+    "firstName": "Michael",
+    "lastName": "Archangel",
+    "email": "michael@heavensrealm.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "655000f7ea7ead465908d1f7"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "divine_messenger",
+    "password": "gabriel123",
+    "firstName": "Gabriel",
+    "lastName": "Archangel",
+    "email": "gabriel@heavensmail.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "65500100ea7ead465908d1f8"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "parting_seas",
+    "password": "moses10",
+    "firstName": "Moses",
+    "lastName": "N/A",
+    "email": "moses@exodus.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "65500109ea7ead465908d1f9"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "giant_slayer",
+    "password": "davidKing42",
+    "firstName": "David",
+    "lastName": "N/A",
+    "email": "david@israelkingdom.com",
+    "dob": "unknown",
+    "role": "USER"
+}, {
+    "_id": {
+        "$oid": "65500111ea7ead465908d1fa"
+    },
+    "liked_movies": [
+        1,
+        8
+    ],
+    "rewatched_movies": [{
+        "id": 1,
+        "watches": 4
+    },
+    {
+        "id": 8,
+        "watches": 3
+    },
+    {
+        "id": 2,
+        "watches": 2
+    }],
+    "followers": [
+        "white_wizard",
+        "evenstar"
+    ],
+    "following": [
+        "lady_of_light",
+        "iron_man"
+    ],
+    "username": "heavenly_gatekeeper",
+    "password": "peterRock12",
+    "firstName": "Peter",
+    "lastName": "Saint",
+    "email": "peter@pearlygates.com",
+    "dob": "unknown",
+    "role": "ADMIN"
+}
+]
