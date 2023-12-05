@@ -4,7 +4,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import UserRoutes from "./users/routes.js";
 import "dotenv/config";
-import MovieRoutes from ".movies/routes.js";
+import MovieRoutes from "./movies/routes.js";
 
 const app = express()
 app.use(express.json());

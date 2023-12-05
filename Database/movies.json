@@ -18,6 +18,42 @@
 },
 {
     "_id": {
+        "$oid": "656e92d75a3f9d312ad7f2cd"
+    },
+    "id": 34,
+    "likes": 5,
+    "title": "Batman: The Killing Joke",
+    "year": "2016",
+    "runtime": "92",
+    "genres": [
+        "Drama",
+        "Action"
+    ],
+    "director": "Sam Liu",
+    "actors": "Kevin Conroy, Mark Hamill",
+    "plot": "As Batman hunts for the escaped Joker, the Clown Prince of Crime attacks the Gordon family to prove a diabolical point mirroring his own fall into madness.",
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+},
+{
+    "_id": {
+        "$oid": "656e94045a3f9d312ada8c83"
+    },
+    "id": 35,
+    "likes": 5,
+    "title": "RiffTrax: The Hunger Games",
+    "year": "2012",
+    "runtime": "92",
+    "genres": [
+        "Drama",
+        "Action"
+    ],
+    "director": "Francis Lawrence, Gary Ross",
+    "actors": "Jennifer Lawrence, Josh Hutcherson",
+    "plot": "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
+    "posterUrl": "https://m.media-amazon.com/images/M/MV5BZjU2ZjE5MTUtMWUwYy00YjdiLTkzMmEtNGRhMDhlNzhkZDY2XkEyXkFqcGdeQXVyODk1MTg5MDU@._V1_SX300.jpg"
+},
+{
+    "_id": {
         "$oid": "656d030a5a3f9d312a3de119"
     },
     "id": 2,
@@ -40,7 +76,7 @@
         "$oid": "656d030a5a3f9d312a3de11a"
     },
     "id": 3,
-    "likes": 8,
+    "likes": 3,
     "title": "The Shawshank Redemption",
     "year": "1994",
     "runtime": "142",
@@ -127,7 +163,7 @@
         "$oid": "656d030a5a3f9d312a3de11f"
     },
     "id": 8,
-    "likes": 9,
+    "likes": 3,
     "title": "Memento",
     "year": "2000",
     "runtime": "113",
@@ -198,7 +234,7 @@
         "$oid": "656d030a5a3f9d312a3de123"
     },
     "id": 12,
-    "likes": 8,
+    "likes": 3,
     "title": "Taxi Driver",
     "year": "1976",
     "runtime": "113",
