@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
       type: Array,
       items: [
         {
-          "type": "integer"
+          type: Number
         }
       ]
     },
@@ -17,10 +17,10 @@ const userSchema = new mongoose.Schema({
           type: Object,
           properties: {
             id: {
-              "type": "integer"
+              type: Number
             },
             watches: {
-              "type": "integer"
+              type: Number
             }
           }
         }
