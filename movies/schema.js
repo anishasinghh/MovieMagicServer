@@ -18,6 +18,7 @@ const movieSchema = new mongoose.Schema({
     actors: { type: String },
     plot: { type: String },
     posterUrl: { type: String },
+    imdbID: { type: String},
 }, { collection: "movies" });
 
 
