@@ -3,8 +3,8 @@ export const createUser = (user) => model.create(user);
 export const findAllUsers = () => model.find();
 export const findAllUSERUsers = () => model.find({ role: "USER" });
 export const findUserById = (userId) => model.findById(userId);
-export const findUserByUsername = (username) =>
-  model.findOne({ username: username });
+export const findUserByUsername = (usr) =>
+  model.findOne({username: usr });
 export const findUserByCredentials = (username, password) =>
   model.findOne({ username, password });
 export const updateUser = (userId, user) =>
