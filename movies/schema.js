@@ -5,7 +5,7 @@ const movieSchema = new mongoose.Schema({
   title: { type: String },
   year: { type: Number },
   runtime: { type: Number },
-  // likes: { type: Number },
+  likes: { type: Number },
   genres: {
     type: Array,
     items: [
@@ -18,6 +18,7 @@ const movieSchema = new mongoose.Schema({
   actors: { type: String },
   plot: { type: String },
   posterUrl: { type: String },
+  imdbID: { type: String },
 }, { collection: "movies" });
 
 
