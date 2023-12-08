@@ -8,7 +8,7 @@ function UserRoutes(app) {
   const deleteUser = async (req, res) => {
     const status = await dao.deleteUser(req.params.userId);
     res.json(status);
-};
+  };
   const findAllUsers = async (req, res) => {
     const users = await dao.findAllUsers();
     res.json(users);
@@ -25,7 +25,7 @@ function UserRoutes(app) {
   };
   const updateUser = async (req, res) => {
     const { userId } = req.params;
-    const status = await dao.updateUser(userId, req.body);
+    const status = await dao.updateUserLikes(userId, req.body);
     const currentUser = await dao.findUserById(userId);
     req.session['currentUser'] = currentUser;
     res.json(status);
@@ -46,21 +46,31 @@ function UserRoutes(app) {
     const currentUser = await dao.findUserByCredentials(username, password);
     req.session['currentUser'] = currentUser;
     res.json(currentUser);
-   };
-   const signout = (req, res) => {
+  };
+  const signout = (req, res) => {
     req.session.destroy();
     res.json(200);
   };
   const account = async (req, res) => {
     res.json(req.session['currentUser']);
-   };
+  };
 
+
+  const updateUserLikes = async (req, res) => {
+    const { userId } = req.params;
+    const { movieId } = req.body;
+    const currentUser = await dao.findUserById(userId);
+    currentUser.liked_movies.push(movieId);
+    const status = await dao.updateUser(userId, currentUser); // Assuming this function updates user data
+    res.json(status);
+  };
 
   app.post("/api/users", createUser);
   app.get("/api/users", findAllUsers);
   app.get("/api/USERusers", findAllUSERUsers);
   app.get("/api/users/:userId", findUserById);
   app.put("/api/users/:userId", updateUser);
+  app.put("/api/users/likes/:userId", updateUserLikes);
   app.delete("/api/users/:userId", deleteUser);
   app.post("/api/users/signup", signup);
   app.post("/api/users/signin", signin);
