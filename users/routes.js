@@ -62,6 +62,29 @@ function UserRoutes(app) {
     res.json(req.session['currentUser']);
    };
 
+  const addFollowing = async (req, res) => {
+    try {
+      const { usernameToAdd, currentUser } = req.body;
+      // const currentUser = res.json(req.session['currentUser']); // Retrieve current user from session
+  
+      if (!currentUser) {
+        return res.status(401).json({ message: 'No current user' });
+      }
+
+  
+      // Check if the user is not already in the following list
+      // if (!currentUser.following.includes(usernameToAdd)) {
+        currentUser.following.push(usernameToAdd);
+        await currentUser.save();
+      // }
+      
+      res.json(currentUser);
+    } catch (error) {
+      console.error('Error adding following:', error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+  }
+
 
   app.post("/api/users", createUser);
   app.get("/api/users", findAllUsers);
@@ -76,5 +99,7 @@ function UserRoutes(app) {
 
   app.get("/api/users/:userId", findUserById);
   app.get("/api/users/profile/:username", findUserByUsername)
+
+  app.post("/api/users/profile/addFollowing", addFollowing);
 }
 export default UserRoutes;
