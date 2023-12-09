@@ -28,7 +28,14 @@ function UserRoutes(app) {
     const user = await dao.findUserByUsername(req.params.username);
     res.json(user);
   };
-
+  
+  const updateUserDetails = async (req, res) => {
+    const { userId } = req.params;
+    const status = await dao.updateUser(userId, req.body);
+    const currentUser = await dao.findUserById(userId);
+    req.session['currentUser'] = currentUser;
+    res.json(status);
+  };
 
   const updateUser = async (req, res) => {
     const { userId } = req.params;
@@ -186,5 +193,7 @@ function UserRoutes(app) {
   app.get("/api/users/profile/:username", findUserByUsername)
 
   app.put("/api/users/profile/addFollowing/:usernameToFollow/:currentUserName", addFollowing);
+  app.put("/api/users/profile/:userId", updateUserDetails);
+
 }
 export default UserRoutes;
