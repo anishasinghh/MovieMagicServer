@@ -112,6 +112,44 @@ function UserRoutes(app) {
 
   app.put("/api/users/profile/addFollowing/:usernameToFollow/:currentUserName", addFollowing);
 
+  const removeFollowing = async (req, res) => {
+    const { usernameToRemove, currentUserName } = req.params;
+  
+    try {
+      const currentUser = await dao.findUserByUsername(currentUserName);
+  
+      if (!currentUser) {
+        return res.status(404).json({ error: "Current user not found" });
+      }
+  
+      // Check if the current user is following the user to be removed
+      const indexToRemove = currentUser.following.indexOf(usernameToRemove);
+      
+      if (indexToRemove !== -1) {
+        currentUser.following.splice(indexToRemove, 1); // Remove the user from the following list
+        const status = await dao.updateUserByUsername(currentUserName, currentUser);
+  
+        // Remove the current user from the followers list of the user being unfollowed
+        const userToUnfollow = await dao.findUserByUsername(usernameToRemove);
+        const indexToRemoveFollower = userToUnfollow.followers.indexOf(currentUserName);
+        
+        if (indexToRemoveFollower !== -1) {
+          userToUnfollow.followers.splice(indexToRemoveFollower, 1);
+          await dao.updateUserByUsername(usernameToRemove, userToUnfollow);
+        }
+  
+        res.json(status);
+      } else {
+        res.status(400).json({ error: "User is not being followed" });
+      }
+    } catch (error) {
+      console.error("Error removing following user:", error);
+      res.status(500).json({ error: "Internal Server Error", details: error.message });
+    }
+  };
+  
+  app.put("/api/users/profile/removeFollowing/:usernameToRemove/:currentUserName", removeFollowing);
+
   app.post("/api/users", createUser);
   app.get("/api/users", findAllUsers);
   app.get("/api/USERusers", findAllUSERUsers);
