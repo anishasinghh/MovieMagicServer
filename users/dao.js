@@ -3,8 +3,8 @@ export const createUser = (user) => model.create(user);
 export const findAllUsers = () => model.find();
 export const findAllUSERUsers = () => model.find({ role: "USER" });
 export const findUserById = (userId) => model.findById(userId);
-export const findUserByUsername = (username) =>
-  model.findOne({ username: username });
+export const findUserByUsername = (usr) =>
+  model.findOne({username: usr });
 export const findUserByCredentials = (username, password) =>
   model.findOne({ username, password });
 export const updateUser = (userId, user) =>
@@ -15,5 +15,9 @@ export const updateUserLikes = (userId, movieId) => {
     { $addToSet: { liked_movies: movieId } }
   );
 };
+  export const updateUserByUsername = (username, user) =>
+  model.updateOne({ username: username }, { $set: user });
 export const deleteUser = (userId) => model.deleteOne({ _id: userId });
+export const deleteUserByUsername = (username) => model.deleteOne({ username: username });
+
 // export const findUserByCredentials = (usr, pass) => model.findOne({ username: usr, password: pass });
