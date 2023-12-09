@@ -8,7 +8,7 @@ function UserRoutes(app) {
   const deleteUser = async (req, res) => {
     const status = await dao.deleteUser(req.params.userId);
     res.json(status);
-};
+  };
   const findAllUsers = async (req, res) => {
     const users = await dao.findAllUsers();
     res.json(users);
@@ -53,38 +53,64 @@ function UserRoutes(app) {
     const currentUser = await dao.findUserByCredentials(username, password);
     req.session['currentUser'] = currentUser;
     res.json(currentUser);
-   };
-   const signout = (req, res) => {
+  };
+  const signout = (req, res) => {
     req.session.destroy();
     res.json(200);
   };
   const account = async (req, res) => {
     res.json(req.session['currentUser']);
-   };
+  };
 
   const addFollowing = async (req, res) => {
+    const { usernameToFollow, currentUserName } = req.params;
+
     try {
-      const { usernameToAdd, currentUser } = req.body;
-      // const currentUser = res.json(req.session['currentUser']); // Retrieve current user from session
-  
-      if (!currentUser) {
-        return res.status(401).json({ message: 'No current user' });
+      // Find the user being followed
+      const userToFollow = await dao.findUserByUsername(usernameToFollow);
+
+      if (!userToFollow) {
+        return res.status(404).json({ error: "User to follow not found" });
       }
 
-  
-      // Check if the user is not already in the following list
-      // if (!currentUser.following.includes(usernameToAdd)) {
-        currentUser.following.push(usernameToAdd);
-        await currentUser.save();
-      // }
-      
-      res.json(currentUser);
-    } catch (error) {
-      console.error('Error adding following:', error);
-      res.status(500).json({ message: 'Internal Server Error' });
-    }
-  }
+      // Find the current user
+      const currentUser = await dao.findUserByUsername(currentUserName);
 
+      if (!currentUser) {
+        return res.status(404).json({ error: "Current user not found" });
+      }
+
+      // Check if the current user is already following the user
+      if (!currentUser.following.includes(usernameToFollow)) {
+        // Add the user being followed to the current user's following list
+        currentUser.following.push(usernameToFollow);
+
+        // Check if the user being followed is already a follower of the current user
+        if (!userToFollow.followers.includes(currentUserName)) {
+          // Add the current user to the followers list of the user being followed
+          userToFollow.followers.push(currentUserName);
+        } else {
+          // Remove the reciprocal relationship if they already follow each other
+          userToFollow.followers = userToFollow.followers.filter(follower => follower !== currentUserName);
+          currentUser.following = currentUser.following.filter(following => following !== usernameToFollow);
+        }
+
+        // Update both users in the database
+        const updateCurrentUserStatus = await dao.updateUserByUsername(currentUserName, currentUser);
+        const updateUserToFollowStatus = await dao.updateUserByUsername(usernameToFollow, userToFollow);
+
+        res.json({ updateCurrentUserStatus, updateUserToFollowStatus });
+      } else {
+        // User is already being followed
+        res.status(400).json({ error: "User is already being followed" });
+      }
+    } catch (error) {
+      console.error("Error following user:", error);
+      res.status(500).json({ error: "Internal Server Error", details: error.message });
+    }
+  };
+
+  app.put("/api/users/profile/addFollowing/:usernameToFollow/:currentUserName", addFollowing);
 
   app.post("/api/users", createUser);
   app.get("/api/users", findAllUsers);
@@ -100,6 +126,6 @@ function UserRoutes(app) {
   app.get("/api/users/:userId", findUserById);
   app.get("/api/users/profile/:username", findUserByUsername)
 
-  app.post("/api/users/profile/addFollowing", addFollowing);
+  app.put("/api/users/profile/addFollowing/:usernameToFollow/:currentUserName", addFollowing);
 }
 export default UserRoutes;
