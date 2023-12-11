@@ -11,7 +11,7 @@ function UserRoutes(app) {
   };
   const findAllUsers = async (req, res) => {
     const users = await dao.findAllUsers();
-    console.log(users);
+    // console.log(users);
     res.json(users);
 
   };
@@ -30,7 +30,7 @@ function UserRoutes(app) {
     const user = await dao.findUserByUsername(req.params.username);
     res.json(user);
   };
-  
+
   const updateUserDetails = async (req, res) => {
     const { userId } = req.params;
     const status = await dao.updateUser(userId, req.body);
@@ -68,7 +68,7 @@ function UserRoutes(app) {
     req.session.destroy();
     res.json(200);
   };
-  
+
   const account = async (req, res) => {
     res.json(req.session['currentUser']);
   };
@@ -80,6 +80,7 @@ function UserRoutes(app) {
     const currentUser = await dao.findUserById(userId);
     currentUser.liked_movies.push(movieId);
     const status = await dao.updateUser(userId, currentUser);
+    req.session['currentUser'] = currentUser;
     res.json(status);
   };
 
@@ -89,6 +90,7 @@ function UserRoutes(app) {
     const currentUser = await dao.findUserById(userId);
     currentUser.liked_movies.pop(movieId);
     const status = await dao.updateUser(userId, currentUser);
+    req.session['currentUser'] = currentUser;
     res.json(status);
   };
 
@@ -144,30 +146,30 @@ function UserRoutes(app) {
 
   const removeFollowing = async (req, res) => {
     const { usernameToRemove, currentUserName } = req.params;
-  
+
     try {
       const currentUser = await dao.findUserByUsername(currentUserName);
-  
+
       if (!currentUser) {
         return res.status(404).json({ error: "Current user not found" });
       }
-  
+
       // Check if the current user is following the user to be removed
       const indexToRemove = currentUser.following.indexOf(usernameToRemove);
-      
+
       if (indexToRemove !== -1) {
         currentUser.following.splice(indexToRemove, 1); // Remove the user from the following list
         const status = await dao.updateUserByUsername(currentUserName, currentUser);
-  
+
         // Remove the current user from the followers list of the user being unfollowed
         const userToUnfollow = await dao.findUserByUsername(usernameToRemove);
         const indexToRemoveFollower = userToUnfollow.followers.indexOf(currentUserName);
-        
+
         if (indexToRemoveFollower !== -1) {
           userToUnfollow.followers.splice(indexToRemoveFollower, 1);
           await dao.updateUserByUsername(usernameToRemove, userToUnfollow);
         }
-  
+
         res.json(status);
       } else {
         res.status(400).json({ error: "User is not being followed" });
@@ -177,7 +179,7 @@ function UserRoutes(app) {
       res.status(500).json({ error: "Internal Server Error", details: error.message });
     }
   };
-  
+
   app.put("/api/users/profile/removeFollowing/:usernameToRemove/:currentUserName", removeFollowing);
 
   app.post("/api/users", createUser);
